@@ -1,34 +1,24 @@
 ---
 ---
 @import 'jekyll-theme-geneva-noir';
+@import 'jquery.mmenu.all';
 $menu-size: 16%;
-$article-size: 60%;
+@import 'custom.cayman';
 
 .pages {
   padding-left: 20px;
 }
 
-.navbar {
-  background: #4D94CE;
+#my-menu {
+  padding: 10px;
+}
+
+.mm-ismenu {
+  background-image: radial-gradient();
 }
 
 .navbar-brand {
   font-weight: bold;
-}
-
-.single .article {
-  width: $article-size;
-  margin-left: (100% - $menu-size - $article-size)/2%;
-}
-
-.single .article .content {
-  font-size: 18px;
-}
-
-.single .article .content blockquote p {
-  font-size: 21px;
-  font-weight: 400;
-  padding: 5px;
 }
 
 .all-posts #search-container {
