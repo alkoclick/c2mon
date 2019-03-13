@@ -31,7 +31,7 @@ While this is a standard stack for this type of blog, almost all these tools ext
 
 # Theme
 
-The theme currently used is the open source [alkoclick/geneva-noire](https://github.com/alkoclick/geneva-noire), an open source Jekyll theme adapted for this project. You can edit and change themes in the \_config.yml file. If you wish to change it, see [this guide](https://help.github.com/en/articles/adding-a-jekyll-theme-to-your-github-pages-site)
+The theme currently used is the open source, [gh-pages supported](https://pages.github.com/themes/) theme [Cayman](https://github.com/pages-themes/cayman),  adapted for this project. You can edit and change themes in the \_config.yml file. If you wish to change it, see [this guide](https://help.github.com/en/articles/adding-a-jekyll-theme-to-your-github-pages-site). If you would like to implement any additional components take a look at the \_includes folder first - what you want may have already been implemented for something!
 
 # Navigation
 
