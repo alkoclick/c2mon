@@ -22,7 +22,7 @@ url: https://alkoclick.github.io
 github_username:  c2mon
 repository: c2mon/c2mon
 repoHost: "https://gitlab.cern.ch/"
-docFolder: "/tree/master/docs/src"
+docFolder: "/tree/master/docs/"
 
 # Build settings
 markdown: kramdown
