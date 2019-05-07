@@ -52,6 +52,7 @@
         subitems:
           - text: DAQ module developer guide
           - text: DAQ module testing guide
+      - text: Kubernetes Configuration
   - text: License
   # Jekyll seems to have the /license page occupied by default
     url: "c2mon-license"

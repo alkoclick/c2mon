@@ -1,4 +1,8 @@
-# C2MON ❤️ Kubernetes
+---
+layout:   post
+title:    C2MON ❤️ Kubernetes
+summary:  Explains how to get C2MON running in a Kubernetes environment 
+---
 
 A production-grade C2MON deployment requires rolling out multiple and complex elements, such as messaging brokers, load balanced web servers, data history databases, configuration databases and data acquisition processes (DAQ).
 
@@ -21,8 +25,8 @@ Deploying C2MON on a cloud infrastructure involves the following architectural l
 |Archiving Layer|Collects information and indexes it (typically by timestamp) to provide fast history querying and long term data storage.|
 |Publishing Layer|C2MON can in turn republish tag updates, validity status or aggregation results through standard protocols (DIP, AQMP, HTTP, WebSockets).|
 |Presentation Layer|This layer formats data updates into graphical operation panels and offers historical data access. This layer represents the data's intended destination.|
-
-![Screenshot](/img/user-guide/c2mon-layers-overview.png) 
+ 
+![Screenshot]({{site.baseurl }}/assets/img/user-guide/c2mon-layers-overview.png)
 
 ## Running the server
 
