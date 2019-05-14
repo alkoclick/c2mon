@@ -1,0 +1,30 @@
+{% assign navurl = site.url | append: site.baseurl | append: page.url | remove: '.html' %}
+<ul class="pages">
+{% for item in include.nav %}
+
+    {% assign fullUrl = item.text %}
+      <!-- Allows for custom url spec -->
+    {% if item.url %}
+      {% assign fullUrl = item.url %}
+    {% endif %}
+    {% assign fullUrl = fullUrl | slugify | prepend:include.base | absolute_url %}
+
+    <li>
+      <a href="{{ fullUrl }}" class="pages-li">
+        {%- if navurl contains fullUrl -%}
+          <b>
+            {{ item.text }}
+          </b>
+        {% else %}
+            {{ item.text }}
+        {% endif %}
+
+        {%- if item.subitems -%}
+          <!-- Allows for skipping the "/" in menu.yml entries -->
+          {% assign fullUrl = fullUrl | append:"/" %}
+          {%- include nav.html nav=item.subitems base=fullUrl -%}
+      {% endif %}
+      </a>
+    </li>
+{% endfor %}
+</ul>
